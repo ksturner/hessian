@@ -1,0 +1,30 @@
+SSLPP
+A C++ HTTP[S] POST library
+
+SSLPP is copyright (C) 2004 Aldratech Ltd.
+Released under the terms of the GNU Lesser General Public License.
+See the LICENSE file for licensing information.
+Parts copyright (C) 2002 Ilya Volynets, Total Knowledge, the
+"ssl++" library, on which this code is partially based.
+
+SSLPP is a C++ library for HTTP over plain and SSL connections.
+It does minimal POST and response parsing.
+
+It does not in any way try to match up with other libraries such
+as CURL, but instead tries to provide a simple, clean, C++ API for
+posting data to an URL and getting the reply back, either on
+HTTP or HTTPS. It does not provide access to headers and whatnot,
+although you could alter/extend the library to do so.
+SSLPP is also a bit smaller than CURL compiled with optimisations
+and stripped.
+
+Please see LICENSE and ORIGINAL.COPYRIGHT for licensing info.
+Please see the INSTALL file for installation info.
+
+Included is a Doxygen file to generate class documentation; also
+see the code in client.cpp.
+
+CONTACT
+* Project web page: http://sourceforge.net/hessiancpp
+* Developer: Radu-Adrian Popescu, email radu.popescu@aldratech.com
+* Commercial inquiries: office@aldratech.com

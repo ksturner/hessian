@@ -163,11 +163,11 @@ int main(int argc, char* argv[]) {
 			// sendInt(int):int
 			Object* res1 = proxy.call("sendInt", 1, &p_int1);
 			auto_ptr<Object> auto_release_res1(res1);
-			
+
 			// receiveBinary(byte[]):byte[]
 			Object* res2 = proxy.call("receiveBinary", 0);
 			auto_ptr<Object> auto_release_res2(res2);
-			
+
 			// sendList(list, string):list
 			Object* result = proxy.call("sendList", 2, &p_list, &p_str1);
 			// auto-release result

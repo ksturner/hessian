@@ -1,0 +1,44 @@
+SSLPP Installation Instructions
+
+1. Original environment
+
+SSLPP was developed on a Fedora Core 2 x86_64 system, using
+* GCC 3.3.3
+* OpenSSL 0.9.7a
+* BOOST 1.31.0
+* shared library
+and ported to Windows XP and 2000 Server, using
+* Microsoft C++ 13.10 (VS.NET 2003)
+* OpenSSL 0.9.7d
+* BOOST 1.31.0
+* static library
+
+
+2. Configure your environment
+
+2.1 Supplied Makefile
+
+The Makefile assumes that BOOST is in your default include PATH.
+If it's not make sure it gets there.
+The Makefile's default target builds a shared library.
+The "install" target installs the headers and the shared library
+in $(PREFIX)/include and $(PREFIX)/lib.
+The "client" target depends on "install" and builds a simple test
+program.
+You may want to edit the PREFIX value.
+
+2.2 Supplied VS.NET project
+
+The VS.NET project:
+- assumes the sslpp source code is found in ..\ssl++\
+- builds the static library ssl++w.lib
+
+
+3. If the above does not work
+
+Then please fix it and give it back to us !
+Things should not be complicated at all, after all we're talking
+about a 10 source file library.
+
+4. Good luck
+

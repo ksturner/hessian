@@ -28,7 +28,8 @@
 #include "wrappers.h"
 #include "input_stream.h"
 
-#include <ssl++.h>
+/* #include <ssl++.h> */
+#include "sslpp/ssl++.h"
 
 using namespace std;
 using namespace hessian::wrappers;
@@ -72,7 +73,7 @@ namespace hessian {
 		bool use_ssl() const;
 		///Return a string representation of this proxy.
 		string to_string() const;
-		///Get the number of bytes received by all instances. 
+		///Get the number of bytes received by all instances.
 		static unsigned long long bytes_in();
 		///Get the number of bytes sent by all instances.
 		static unsigned long long bytes_out();
