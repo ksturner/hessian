@@ -13,6 +13,19 @@ module for your computing pleasure. Now you can get all the speed of the
 low-level compiled version from within your Python code without feeling like
 the api looks/feels like the picture above.
 
+WARNING
+-------
+
+*THIS MODULE IS NOT FULLY COMPLETED!* While it wraps the C++ code, the
+conversion of the objects into Python objects was not fully completed. The
+reason for this was the discovery that the C++ code parse for v1.0 of the
+Hessian spec which was not the version I needed to connect to. Rather than
+invest the significant amount of energy that was required to update a library I
+didn't write to v2.0, I decided to abort and find a non-Hessian solution to the
+original project that was needing a faster Hessian implementation. My apologies
+for the half-implemented dump() function in the code below, but feel free to
+submit patches if you work on it.
+
 
 References
 ----------
