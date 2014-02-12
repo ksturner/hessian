@@ -2,7 +2,7 @@
 Fast Python Hessian Module
 ==========================
 
-![The Hessian](http://animationreview.files.wordpress.com/2013/03/bunker-hill-bunny-c2a9-warner-brothers.jpg)
+![The Hessian](hessian.jpg)
 
 
 I don't know what this image says about a Hessian api, but at any rate, if you
