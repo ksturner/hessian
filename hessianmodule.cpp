@@ -27,7 +27,6 @@ using namespace hessian;
 using namespace hessian::wrappers;
 namespace py = boost::python;
 
-
 void dump(Object* o, py::list& pyl);
 
 
@@ -137,7 +136,6 @@ void python_to_vector(boost::python::object o, vector<T>* v) {
  * to instantiate the hessian_proxy object, and pass that in to this call
  * method when the call needs to be performed.
  */
-
 py::list proxy_call(const char* hostspec,
                 const char* url,
                 const char* call_func,
